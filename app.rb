@@ -19,8 +19,8 @@ class App < Sinatra::Base
   end
 
   post "/set" do 
-    session[:foo] = @hello
-    params["foo"] = @hello
+    session[:foo] = hello
+    params["foo"] = hello
   end 
   get '/set' do
     # set the :foo key of the session hash equal to 'hello' here!
